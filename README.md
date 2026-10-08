@@ -4,6 +4,8 @@
 
 实现课程指定的 S-DES 修改版，提供浏览器交互 GUI、ASCII / UTF-8 字符串加解密、完整密钥搜索与碰撞分析。深色实验台、逐轮计算过程、后台运算、移动端布局。
 
+**[在线体验 S-DES Lab](https://wang67681-crypto.github.io/sdes-lab/)**
+
 ![界面预览](docs/screenshots/workbench.jpg)
 
 ## 运行
@@ -48,7 +50,9 @@ npm run build    # 输出 dist/，可部署到任意静态网站服务器
 
 ## 静态部署
 
-仓库附 GitHub Actions 测试工作流和手动 Pages 发布工作流。GitHub 仓库 Settings → Pages → Source 选择 GitHub Actions，再在 Actions 中运行 Deploy Pages。构建产物为 `dist/`，所有路径都为相对路径，适用于仓库子路径。
+本仓库已配置 GitHub Pages 从 `main` 分支根目录自动发布，`.nojekyll` 保持原样静态托管。每次推送会触发算法验证，网站随分支更新。构建产物为 `dist/`，所有路径都为相对路径，适用于仓库子路径。
+
+另附可选手动 Actions 发布工作流；若采用该方式，需在 Settings → Pages 中将 Source 改为 GitHub Actions，再运行 Deploy Pages。
 
 [课程要求](https://shimo.im/docs/m5kvdlMaKvcENy3X/) · 截止时间：2026-10-08 23:00（北京时间）。
 
